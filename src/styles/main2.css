@@ -48,10 +48,26 @@ body {
  background: none;
  text-align: center;
 }
+#changeTitle{
+  color: #BF1363;
+  font-size: 3.3rem;
+}
 h1 {
   color:#24E5BB;
   font-weight: bold;
-  font-size: 8vh;
+  font-size: 4.5rem;
   text-shadow: 0.5vh .5vh 0 #BF1363;
   padding-top: 10%;
+  margin-bottom: 3rem;
+}
+.arrow {
+  margin: 35% 0 25% 0;
+}
+.fa-arrow-down {
+  color: #BF1363;
+  height: 50px;
+  width: 50px;
+  padding-top: 2.5%;
+  background-color: #FCC000;
+  border-radius: 100px;
 }
