@@ -1,0 +1,196 @@
+/*
+CSS STYLE GUIDE
+
+Font -
+Titles: Avenir Next Bold
+h3: Georgia Italics
+
+HEADER -
+header background: #02182B
+
+Title Font Color: #24E5BB
+      Shadow Color: #BF1363
+SubTitle Font Color: #BF1363
+Break Line: #24E5BB
+
+Maine -
+main background: #02182B
+work background: #24E5BB
+footer background: #BF1363
+
+
+*/
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Avenir Next";
+}
+header {
+  background: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?dpr=1&auto=format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+}
+.headWrapper {
+  background: rgba(2, 24, 43, .95 );
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  height:100vh;
+}
+h1 {
+  color:#24E5BB;
+  font-weight: bold;
+  font-size: 8vh;
+  text-shadow: 0.5vh .5vh 0 #BF1363;
+  padding-top: 10%;
+}
+#changeTitle{
+  margin: 25% 5% 5% 5%;
+  color: #BF1363;
+  font-size: 6vh;
+
+}
+#headHR {
+  width: 45%;
+  border: .3vh solid #24E5BB;
+}
+.arrow{
+  width: 53px;
+  height: 69.5px;
+}
+#headArrow {
+  margin-top: 35%;
+}
+.topWrapper {
+  display:flex;
+  flex-flow:column wrap;
+  height: 90vh;
+  background: #02182B;
+  color: #FFFFFE;
+  text-align: left;
+  padding: 0 7% 0 7%;
+}
+.topTitles {
+  padding: 10% 20% 5% 0;
+  margin: 0;
+}
+.sectionHeader{
+  font-size: 8.5vw;
+  padding-top: 5%;
+}
+.sectionSub {
+  font-size: 6.7vw;
+}
+#topHR {
+  width: 30%;
+  border: 1.5px solid #BF1363;
+  margin: 5% 20% 10% 0;
+}
+#topname {
+  color: #FCC000;
+}
+
+.descrip {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 5vw;
+  font-weight: lighter;
+}
+#topDescrip {
+  color: white;
+}
+#emailLink {
+  background: none;
+  margin-top: 50%;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 4vh;
+}
+.workWrapper {
+  /*background: url('../images/diagonal_striped_brick_@2X.png');*/
+  background-size: contain;
+}
+.workBG {
+  /*background: rgba(36, 229, 187, .8);*/
+  /*padding: 5%;*/
+}
+.workCard {
+  text-align: left;
+  /*background: white;*/
+  width: 100%;
+  margin-bottom: 5%;
+}
+.workHr {
+  border: 1px solid #BF1363;
+  width: 30%;
+  margin: 2% 0 0 2%;
+}
+#sloop {
+  background: url("../images/Scriptloop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sloopWrap {
+  background: rgba(36, 229, 187, .7);
+}
+#neatshop {
+  background: url("../images/neatshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#neatWrap {
+  background: rgba(2,24,43, .7)
+}
+#otherCard {
+  background: url('../images/neatshop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#otherInfo {
+  background: rgba(191, 19, 99, .7);
+}
+.infoWrapper{
+  margin: 2% 0;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+}
+.infoWrapper p{
+  text-align: center;
+}
+.infoWrapper a {
+  margin: 5%;
+}
+.infoBttn {
+  padding: 2% 15%;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  font-size: 3.5vw;
+}
+.Bttns {
+  margin: 3% 0 5% 0;
+  width: 100%;
+}
+button {
+  background: #FCC000;
+}
+img {
+  width: 100%;
+}
+h2 {
+  font-size: 5.3vh;
+  color: #ffffff;
+}
+h4 {
+  color: white;
+  flex-basis: 50%;
+  margin: 4% 0 0 2%;
+  font-size: 6vw;
+}
+span{
+  color: #BF1363;
+}
