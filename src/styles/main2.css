@@ -16,18 +16,18 @@ Yellow: #FCC000;
 body {
   background: #02182B;
   font-family: "Avenir Next";
+  color: #fff;
 }
 .top-wrapper {
   padding: 0;
   background: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?dpr=1&auto=format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=');
   background-size: cover;
-
 }
 #topsection {
   background: rgba(2, 24, 43, .95 );
 }
 .navbutton {
-  border: 1px solid #fff;
+  border: 1px solid #BF1363;
 }
 .nav-link {
   color: #fff;
@@ -36,7 +36,7 @@ body {
   justify-content: flex-end;
 }
 .fa-bars {
-  color: #fff;
+  color: #24E5BB;
 }
 .nav-item:hover {
   border-bottom: 1px solid #BF1363;
@@ -70,4 +70,25 @@ h1 {
   padding-top: 2.5%;
   background-color: #FCC000;
   border-radius: 100px;
+}
+h2, h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#topname {
+  color: #FCC000;
+}
+#topHR {
+  width: 30%;
+  border: 1.5px solid #BF1363;
+}
+.descrip {
+  font-family: Baskerville, serif;
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+}
+#emailbtn {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
