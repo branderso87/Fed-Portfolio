@@ -17,8 +17,6 @@ Maine -
 main background: #02182B
 work background: #24E5BB
 footer background: #BF1363
-
-
 */
 
 * {
@@ -39,6 +37,7 @@ header {
   flex-flow: column wrap;
   text-align: center;
   height:100vh;
+  align-items: center;
 }
 h1 {
   color:#24E5BB;
@@ -47,10 +46,22 @@ h1 {
   text-shadow: 0.5vh .5vh 0 #BF1363;
   padding-top: 10%;
 }
-#changeTitle{
-  margin: 25% 5% 5% 5%;
+.scrollWrapper {
+  margin: 25% 5% 5% 0;
   color: #BF1363;
   font-size: 6vh;
+  height: 9%;
+  overflow: hidden;
+}
+.scrollText {
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  margin-left: -5%;
 }
 #headHR {
   width: 45%;
@@ -68,20 +79,20 @@ h1 {
   flex-flow:column wrap;
   height: 90vh;
   background: #02182B;
-  color: #FFFFFE;
+  color: #FFFFFF;
   text-align: left;
   padding: 0 7% 0 7%;
 }
 .topTitles {
   padding: 10% 20% 5% 0;
-  margin: 0;
 }
 .sectionHeader{
-  font-size: 8.5vw;
+  font-size: 4.5vh;
   padding-top: 5%;
+  width: 100vw;
 }
 .sectionSub {
-  font-size: 6.7vw;
+  font-size: 3.5vh;
 }
 #topHR {
   width: 30%;
@@ -95,11 +106,8 @@ h1 {
 .descrip {
   font-family: Georgia;
   font-style: italic;
-  font-size: 5vw;
+  font-size:3vh;
   font-weight: lighter;
-}
-#topDescrip {
-  color: white;
 }
 #emailLink {
   background: none;
@@ -109,87 +117,76 @@ h1 {
   font-size: 4vh;
 }
 .workWrapper {
-  /*background: url('../images/diagonal_striped_brick_@2X.png');*/
+  background: url('../images/diagonal_striped_brick_@2X.png');
   background-size: contain;
 }
 .workBG {
-  /*background: rgba(36, 229, 187, .8);*/
-  /*padding: 5%;*/
+  background: rgba(36, 229, 187, .8);
+  padding-bottom: 10%;
 }
-.workCard {
-  text-align: left;
-  /*background: white;*/
-  width: 100%;
-  margin-bottom: 5%;
-}
-.workHr {
-  border: 1px solid #BF1363;
-  width: 30%;
-  margin: 2% 0 0 2%;
-}
-#sloop {
-  background: url("../images/Scriptloop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#sloopWrap {
-  background: rgba(36, 229, 187, .7);
-}
-#neatshop {
-  background: url("../images/neatshop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#neatWrap {
-  background: rgba(2,24,43, .7)
-}
-#otherCard {
-  background: url('../images/neatshop.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#otherInfo {
-  background: rgba(191, 19, 99, .7);
-}
-.infoWrapper{
-  margin: 2% 0;
-  display: flex;
-  flex-flow: column wrap;
-  color: white;
-}
-.infoWrapper p{
+#coolThings {
   text-align: center;
 }
-.infoWrapper a {
-  margin: 5%;
-}
-.infoBttn {
-  padding: 2% 15%;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-  font-size: 3.5vw;
-}
-.Bttns {
-  margin: 3% 0 5% 0;
-  width: 100%;
-}
-button {
-  background: #FCC000;
-}
-img {
-  width: 100%;
-}
-h2 {
-  font-size: 5.3vh;
+#myWork {
   color: #ffffff;
-}
-h4 {
-  color: white;
-  flex-basis: 50%;
-  margin: 4% 0 0 2%;
-  font-size: 6vw;
+  padding: 5% 0 0 5%;
 }
 span{
   color: #BF1363;
+}
+.imgtree {
+  display: flex;
+  height: 70vh;
+}
+.langimg{
+  height: 15vh;
+  width: 30%;
+  margin-top: 10%;
+}
+.workCard {
+  color: #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 30vh;
+  background-size: cover;
+}
+#project1 {
+  background:url('../images/neatshop.png');
+  background-size: cover;
+}
+#project2 {
+  background: url('../images/Scriptloop.png');
+  background-size: cover;
+}
+
+.footerWrapper {
+  height: 15vh;
+  background: #BF1363;
+  color: #ffffff;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: .3em;
+}
+
+/*FrontPage Animation*/
+@keyframes change {
+   0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
 }

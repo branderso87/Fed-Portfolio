@@ -11,10 +11,14 @@
       <header>
         <div class="headWrapper">
           <h1>Brandi Anderson</h1>
-          <span
-          class="txt-rotate" id="changeTitle"
-          data-period="500"
-          data-rotate='[ "Frontend Dev", "Beer Nerd", "Fangirl", "AWESOME!" ]'></span>
+          <div class="scrollWrapper">
+            <ul class="scrollText">
+              <li>Frontend Dev</li>
+              <li>Beer Nerd</li>
+              <li>Fangirl</li>
+              <li>AWESOME!</li>
+            </ul>
+          </div>
           <hr id="headHR">
           <svg class="arrow" id="headArrow" width="106px" height="139px" viewBox="0 0 106 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
@@ -42,65 +46,45 @@
           <hr id="topHR">
           <p class="descrip" id="topDescrip">I love creative and interactive design, witbier, and movies with happy endings. I’m always learning new things and playing with different technologies. </p>
           <a href="mailto:branderso87@gmail.com"><button id="emailLink" type="submit" name="button">Get in Touch</button></a>
-          <!-- <svg width="106px" height="139px" viewBox="0 0 106 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-            <!-- <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Desktop-HD" transform="translate(-667.000000, -839.000000)">
-                <g id="CircleArrow" transform="translate(668.000000, 846.000000)">
-                  <circle id="Oval-3"  fill="#FCC000" cx="52" cy="79" r="52"></circle>
-                  <circle id="Oval-4" fill="#02182B" cx="52" cy="79" r="30"></circle>
-                  <path d="M52,0 L52,78.5" id="Line-2" stroke="#BF1363" stroke-width="14" stroke-linecap="square"></path>
-                  <path id="Line-2-decoration-1" d="M52,78.5 L55,67.7 L49,67.7 L52,78.5 Z" stroke="#BF1363" stroke-width="14" stroke-linecap="square"></path>
-                </g>
-              </g>
-            </g>
-          </svg> -->
         </div>
         <div class="workWrapper">
           <div class="workBG">
-            <h2>My Work<span class="punct" id="workPeriod">.</span></h2>
-            <div class="workCard" id="sloop">
-              <div class="infoWrapper" id="sloopWrap">
-                <h4>ScriptLoop</h4>
-                <hr class="workHr">
-                <p class="descrip" id="scriptDescript1">An app that bridges the gap between patients, doctors, and prescriptions.</p>
-                <div class="Bttns">
-                  <a><button class="infoBttn liveBttn" type="button" name="live">Live</button></a>
-                  <a><button class="infoBttn codeBttn" type="button" name="code">Code</button></a>
-                </div>
-              </div>
+            <div class="imgTree">
+              <h2 class="sectionHeader" id="coolThings">I make cool things with<span class="punct" id="workPeriod">:</span></h2>
+              <img class="langimg" id="html" src="../src/images/html_logo.svg" alt="HTML Logo and Watermark">
+              <img class="langimg" id="css" src="../src/images/css_logo.svg" alt="CSS3 Logo and Watermark">
+              <img class="langimg" id="js" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png" alt="JS Logo and Watermark">
+              <img class="langimg" id="react" src="../src/images/react.svg" alt="React Logo and Watermark">
+              <img class="langimg" id="redux" src="../src/images/redux.svg" alt="React Logo and Watermark">
+              <img class="langimg" id="node" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="">
             </div>
-            <div class="workCard" id="neatshop">
-              <div class="infoWrapper" id="neatWrap">
-                <h4>Neatshop</h4>
-                <hr class="workHr">
-                <p class="descrip" id="scriptDescript1">An app that bridges the gap between patients, doctors, and prescriptions.</p>
-                <div class="Bttns">
-                  <a><button class="infoBttn liveBttn" type="button" name="live">Live</button></a>
-                  <a><button class="infoBttn codeBttn" type="button" name="code">Code</button></a>
-                </div>
-              </div>
+            <h3 class="sectionHeader" id="myWork">My Work<span class="punct" id="workPeriod">.</span></h3>
+            <div class="workCard" id="project1">
+              <h4>Neatshop<span class="punct" id="projPeriod1">.</span></h4>
             </div>
-            <div class="workCard" id="otherCard">
-              <div class="infoWrapper" id="otherInfo">
-                <h4>ScriptLoop</h4>
-                <hr class="workHr">
-                <p class="descrip" id="scriptDescript1">An app that bridges the gap between patients, doctors, and prescriptions.</p>
-                <div class="Bttns">
-                  <a><button class="infoBttn liveBttn" type="button" name="live">Live</button></a>
-                  <a><button class="infoBttn codeBttn" type="button" name="code">Code</button></a>
-                </div>
-              </div>
+            <div class="workCard" id="project2">
+              <h4>ScriptLoop<span class="punct" id="projPeriod1">.</span></h4>
             </div>
+            <div class="workCard" id="project3">
+              <h4><span class="punct" id="projPeriod1"></span></h4>
+            </div>
+            <div class="workCard" id="project4">
+              <h4><span class="punct" id="projPeriod1"></span></h4>
+            </div>
+          </div>
           </div>
         </div>
       </main>
       <footer>
-
+        <div class="footerWrapper">
+          <img class="footIcons" id="github"src="">
+          <img class="footIcons" id="linkedin" src="">
+          <img class="footIcons" id="email" src="">
+          <img class="footIcons" id="instagram" src="">
+          <h5>Created with Love by Brandi Anderson © 2017</h5>
+        </div>
       </footer>
     </container>
-    <script type="text/javascript" src="../src/app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

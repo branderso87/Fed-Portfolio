@@ -85,10 +85,60 @@ h2, h3 {
 .descrip {
   font-family: Baskerville, serif;
   line-height: 1.75rem;
-  font-size: 1.15rem;
+  font-size: 1.30rem;
+}
+.column-list {
+  -webkit-column-count: 3;
+  -webkit-column-gap:20px;
+  -moz-column-count:3;
+  -moz-column-gap:20px;
+  -o-column-count: 3;
+  -o-column-gap:20px;
+  column-count: 2;
+  column-gap:20px;
+  list-style-position: inside;
+  padding-left: 5%;
+}
+li {
+  padding-top: 5%;
 }
 #emailbtn {
-  background: none;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background-color: #FCC000;
+  color: #02182B;
+  font-size: 1.5rem;
+  margin: 10% 0% 10% 60%;
+}
+
+@media (min-width: 736px) {
+  .navbar-toggler {
+    font-size: 2.25rem;
+  }
+  .fa-arrow-down {
+    height: 75px;
+    width: 75px;
+    padding-top: 2.7%;
+  }
+  .fa-2x {
+    font-size: 3em;
+  }
+  .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  h2, h3 {
+    font-size: 2.5rem;
+  }
+  .descrip {
+    line-height: 2rem;
+    font-size: 1.50rem;
+  }
+  #emailbtn {
+    
+  }
+}
+@media (min-width:992px) {
+
+}
+@media (min-width: 1200px) {
+
 }
